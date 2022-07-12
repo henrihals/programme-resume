@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../src/css/style.min.css" type="text/css" rel="stylesheet"/>
+    <title>Learning to work with SASS</title>
+</head>
+<body>
+    <header>
+        <h1>SQL</h1>
+        <input type="search" value="recherche" onfocus="if(this.value=='recherche'){this.value='';}">
+    </header>
+    <main>
+        <section class="container-list-vocabulaire">
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">NOM</h3>
+                <h3 class="vocabulaire-definition">DEFINITION</h3>
+                <span class="container-vocabulaire-infos">
+                <h3 class="vocabulaire-infos">INFOS ET EXEMPLES</h3>
+                </span>
+            </div>
+            <div class="section-vocabulaire">
+                <h3 class="intitule-vocabulaire">GENERAL</h3>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">; (Point-virgule)</h3>
+                <p class="vocabulaire-definition">Le point-virgule (;) est facultatif. Il dénote la fin d'un énoncé. Si vous avez deux instructions ou plus, vous devez l'utiliser les séparer afin que MySQL exécute chaque instruction individuellement.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="section-vocabulaire">
+                <h3 class="intitule-vocabulaire">SELECTIONNER / LIRE</h3>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">SELECT <span>nom de la liste</span></br>FROM <span>nom du tableau</span></h3>
+                <p class="vocabulaire-definition">Permet de sélectionner des données dans une ou plusieurs listes d'un tableau.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">, (Virgule)</h3>
+                <p class="vocabulaire-definition">S'il y a plusieurs listes, les séparées par des virgules.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">* (Astérisque)</h3>
+                <p class="vocabulaire-definition">Permet de sélectionner toutes les listes d'un même tableau.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">ORDER BY</h3>
+                <p class="vocabulaire-definition">Permet de choisir dans quel ordre on souhaite faire apparaître les données (ASC ou DESC) mais s'il y a plusieurs colonnes, il permet de les afficher dans l'ordre que l'on souhaite. Il est également possible de faire de faire des calculs (ex.: nbres de commande * prix) en utilisant les symboles mathématiques (voir exemple).</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-order-by/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">ASC</h3>
+                <p class="vocabulaire-definition">Permet de sélectionner la ou les colonne(s) qui nous intéresse en renvoyant les données de manière ascendante (fonctionne avec ORDER BY). Si plusieurs colonnes sont choisies, pour chacune d'elle, on peut choisir entre ASC ou DESC.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-order-by/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">DESC</h3>
+                <p class="vocabulaire-definition">Permet de sélectionner la ou les colonne(s) qui nous intéresse en renvoyant les données de manière descendante (fonctionne avec ORDER BY). Si plusieurs colonnes sont choisies, pour chacune d'elle, on peut choisir entre ASC ou DESC.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-order-by/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">AS</h3>
+                <p class="vocabulaire-definition">Permet d'ajouter un alias pour créer à la sortir des données une colonne supplémentaire reprenant le total des données de deux colonnes (ex.: nbres de commande * prix ou mettre ensemble un prénom et un nom). Étant donné que MySQL évalue la clause SELECT avant la clause ORDER BY, vous pouvez utiliser l'alias de colonne spécifié dans la clause SELECT dans la clause ORDER BY.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-alias/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">FIELD</h3>
+                <p class="vocabulaire-definition">Permet de trier une liste à l'intérieur d'une autre en fonction fonction de son statut (ex.: en cours, en préparation, envoyé...).</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-order-by/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">WHERE</h3>
+                <p class="vocabulaire-definition">Permet de spécifier une condition de recherche pour les lignes renvoyées par une requête. Il fonctionne également pour DELETE ou UPDATE les lignes que l'on souhaite. On peut y rajouter les termes AND, OR, BETWEEN, LIKE, IN, IS NULL et les OPERATEURS DE COMPARAISON.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-where/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">AND</h3>
+                <p class="vocabulaire-definition">Permet de rajouter plusieurs conditions pour la sélection du résultat. L'opérateur AND prend la valeur TRUE uniquement si toutes les expressions prennent la valeur TRUE. Si l'une des conditions est FALSE, il ne renverra pas l'information.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-and/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">OR</h3>
+                <p class="vocabulaire-definition">Permet de rajouter plusieurs conditions pour la sélection du résultat. L'opérateur OR prend la valeur TRUE si au moins une des conditions est remplie et renverra l'information. Si toutes les conditions sont FALSE, il ne renverra pas l'information.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-or/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">BETWEEN</h3>
+                <p class="vocabulaire-definition">Permet de renvoyer des informations comprises entre 2 valeurs (ex.: BETWEEN 1 AND 3). Si l'information n'est pas comprise entre les 2 valeurs, l'information ne sera pas renvoyée.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-between" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">LIKE</h3>
+                <p class="vocabulaire-definition">Permet de renvoyer des informations comprenant certaines lettres dans un mot. Si on fait %son, il recherchera toutes les informations se terminant par "son". Si on fait son%, il recherchera toutes les informations commençant par "son". Si on fait %son%, il renverra toutes les information contenant "son" et ce peut importe son emplacement dans le mot.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-like/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">IN</h3>
+                <p class="vocabulaire-definition">Permet de renvoyer des informations si dans la ou les colonne(s) choisie(s) se trouve la valeur déterminé par IN.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-basics/mysql-in/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">IS NULL</h3>
+                <p class="vocabulaire-definition">Permet de renvoyer des informations dont les valeurs sont NULL dans une colonne. NULL indique une valeur manquante ou inconnue. NULL n'est pas l'équivalent au nombre 0 ou à une chaîne vide.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-is-null/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">OPERATEUR DE COMPARAISON</h3>
+                <p class="vocabulaire-definition">Permet de renvoyer des informations dont les valeurs correspondent aux opérateurs de comparaison qu'on utilise. Il y a : "=", "<>" ou "!=", "<", ">", "<=", ">=".</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-where/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">DISTINCT</h3>
+                <p class="vocabulaire-definition">Permet de supprimer les informations qui serait en double dans une DB pour que l'information ne sorte qu'une seul fois. Si plusieurs informations on une valeur NULL, il n'en sortira qu'une car pour lui, elles sont identiques même si elle porte des noms différents. Si on souhaite le faire sur plusieurs colonnes, il renverra qu'une seule fois la même information mais si celle-ci se trouve dans toutes les colonnes.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-distinct.aspx" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">LIMIT</h3>
+                <p class="vocabulaire-definition">Permet de limiter le nombre d'information sortie à un nombre de sortie que nous avons choisi (ex.: LIMIT 20 (Le 20 premières informations seront affichées)).</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-limit.aspx" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">INNER JOIN...ON...</h3>
+                <p class="vocabulaire-definition">Le INNER JOIN fait correspondre chaque ligne d'un tableau avec chaque ligne d'autres tableaux et vous permet d'interroger les lignes contenant des colonnes des deux tableaux en utilisant la condition après ON comme étant une condition commune aux différents tableaux. On peut également utilisé USING (voir infos et exemple).</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-inner-join.aspx" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">LEFT JOIN...ON...</h3>
+                <p class="vocabulaire-definition">Le LEFT JOIN fait correspondre chaque ligne d'un tableau avec chaque ligne d'un autre tableau en utilisant la condition (On peut utiliser plus de 2 tableaux s'il on souhaite). Dans le FROM, le tableau choisi est celui de gauche et dans LEFT JOIN, c'est le tableau de droite. Lors du retour des informations, il mettra d'office toutes les données du tableau de gauche mais si dans le tableau de droite il n'y a pas de correspondance avec la condition, il renverra quand même l'information mais ça valeur sera NULL.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-left-join.aspx" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">RIGHT JOIN...ON...</h3>
+                <p class="vocabulaire-definition">C'est pareil que LEFT JOIN mais le sens est inversé.</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-right-join/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">CROSS JOIN...ON...</h3>
+                <p class="vocabulaire-definition">Permet de croiser les données de 2 tableaux pour ne ressortir qu'un seul tableau avec les données croisées des deux tableaux (voir exemple pour plus d'infos).</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-cross-join/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+            <div class="container-vocabulaire">
+                <h3 class="vocabulaire-nom">SELF JOIN...ON...</h3>
+                <p class="vocabulaire-definition">Il est souvent utilisé pour interroger des données hiérarchiques ou pour comparer une ligne avec d'autres lignes dans le même tableau. Pour effectuer un SELF JOIN, on doit utiliser des alias pour ne pas répéter deux fois le même nom de table dans une même requête. Notez que référencer une table deux fois ou plus dans une requête sans utiliser d'alias de table provoquera une erreur (voir exemple pour plus d'infos).</p>
+                <span class="container-vocabulaire-infos">
+                <a href="https://www.mysqltutorial.org/mysql-self-join/" class="vocabulaire-infos" target="_blank">Infos et exemples</a>
+                </span>
+            </div>
+        </section>
+        <section class="infos-complémentaire">
+            <h3>Base de données (DB) :</h3>
+            <p>Une base de données est simplement une collection structurée de données comme une playlist de musique reprenant le chanteur, le titre de la chanson, l'année de création...</p>
+            <h3>Qu'est ce que MySQL ?</h3>
+            <p>MySQL est un système de gestion de base de données qui vous permet de gérer des bases de données relationnelles.</p>
+            <h3>Installer MySQL :</h3>
+            <p>Pour installer MySQL, <a href="https://www.mysqltutorial.org/install-mysql/" target="_blank">cliquez-ici</a></p>
+            <h3>Se connecter à MySQL</h3>
+            <p>Pour se connecter à MySQL, <a href="https://www.mysqltutorial.org/getting-started-with-mysql/connect-to-mysql-server/" target="_blank">cliquez-ici</a></p>
+            <h3>Télécharger l'exemple de DB MySQL</h3>
+            <p>Pour télécharger l'exemple de DB de MySQL, <a href="https://www.mysqltutorial.org/mysql-sample-database.aspx" target="_blank">cliquez-ici</a></p>
+            <h3>Charger l'exemple de DB MySQL</h3>
+            <p>Pour charger l'exemple de DB de MySQL, <a href="https://www.mysqltutorial.org/how-to-load-sample-database-into-mysql-database-server.aspx" target="_blank">cliquez-ici</a></p>
+        </section>
+    </main>
+</body>
+</html>
